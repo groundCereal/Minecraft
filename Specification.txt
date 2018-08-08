@@ -1,0 +1,54 @@
+O plugin vai servir como uma guerra de clans (plugin de clans -> SimpleClans).
+Apenas os lideres dos clans vão poder propor/aceitar os desafios de guerra, ou seja, se o lider do clan desafiado nao estiver online aparecera a seguinte mensagem para o lider do clan desafiador:
+&cO lider do clan &f(clan desafiado) &cnao esta online, tente novamente mais tarde
+
+O lider que convidar tera que efetuar o comando: 
+/guerra desafiar (tag do clan rival) (numero de jogadores)
+
+Tera que haver um minimo de 3 jogadores, ou seja, o comando só será valido caso o numero de jogadores seja 3 ou superior. 
+Se um dos clans nao tiver a quantidade de membros pedida no comando aparecera a seguinte mensagem para o jogador que a enviou:
+&cUm dos clans nao possui &f(quantidade de membros proposta) &conline! Tente novemente mais tarde
+Vai aparecer a seguinte mensagem para todos os jogadores:
+&cO clan &f(Clan desafiador) desafiou o clan &f(clan desafiado) para uma batalha
+
+O lider do clan desafiado vai receber a seguinte mensagem
+&cPara aceitar o convite digite &a/guerra aceitar 
+&cPara recusar o convite digite &4/guerra recusar
+
+Se o lider do clan desafiado usar /guerra recusar vai aparecer a seguinte mensagem para todos:
+&cO desafio de guerra foi recusado
+&cA batalha nao vai decorrer 
+E nao acontecerá mais nada
+
+Se o lider do clan desafiado usar /guerra aceitar vai aparecer a seguinte mensagem para todos:
+&cO desafio de guerra foi aceite
+&cA batalha vai comecar apos a seleção dos membros
+&cUtilize /guerra camarote para assistir
+
+Quando os pedidos forem aceites vai aparecer no chat uma mensagem para ambos os lideres:
+    &cEscolha os membros para participarem:
+    (Mostrando apenas os membros online)
+    - (player1)
+    - (player2)
+(Em que o player seria o membro do clan)
+
+Pontos de teletransporte:
+Vais ter que criar 3 comandos que quando eu usar vai setar um lugar que quando as pessoas usarem outro comando
+Comando 1: 
+Lugar onde as pessoas vao nascer: eu seto o lugar com "/guerraset spawn" os players usam "/guerra entrar" Para serem teletransportados
+Os players so vao poder usar esse comando se forem escolhidos pelo seu lider e terao 120 segundos para usar o comando se nao usarem o comando a tempo a batalha sera cancelada
+
+Comando 2: 
+Lugar onde as pessoas vao comecar o evento: vao ter que haver 2 comandos:
+/guerracomecar1 -> Ponto em que as pessoas do CLAN DESAFIADOR vao ser teletransportadas para a batalha
+/guerracomecar2 -> Ponto em que as pessoas do CLAN DESAFIADO vao ser teletransportados para a batalha
+(os players nao vao executar este comando, so serao teletransportadas para estes lugares quando acabarem os 120 segundos e se eles tiverem usado o comando "/guerra entrar" antes)
+
+Comando 3: 
+Quando so sobrarem membros de um clan vivo vai aparecer a mensagem para todos:
+&cO clan vencedor foi &f(clan vencedor)
+&cTêm 60 segundos para recolher os itens do chao
+&cTodos os que sobreviveram ate ao fim vao receber &f100,000.00$ 
+
+Todos os que ficaram vivos ate ao fim vao receber 100000$ -> /eco give @playervivo 100000
+Lugar onde as pessoas vao acabar: eu seto o lugar com "/guerraset final" E os players sao teletransportados para la quando acabam os 60 segundos que tinham para recolher os itens
