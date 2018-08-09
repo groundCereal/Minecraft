@@ -4,6 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import groundCereal.minecraft.clanWars.commands.ClanWarsCommand;
 import groundCereal.minecraft.clanWars.helpers.CommandHelper;
+import groundCereal.minecraft.clanWars.listeners.InventoryListener;
 import groundCereal.minecraft.clanWars.listeners.PlayerListener;
 import groundCereal.minecraft.clanWars.managers.CommunicationManager;
 import groundCereal.minecraft.clanWars.managers.ConfigManager;
@@ -32,7 +33,7 @@ public class ClanWars extends JavaPlugin {
 		CommandHelper.registerCommand(configManager.getMainCommand());
 		this.getCommand(configManager.getMainCommand()).setExecutor(new ClanWarsCommand());
 		
-		getServer().getPluginManager().registerEvents(new PlayerSelectMenu(), this);
+		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 	}
 
