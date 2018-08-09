@@ -1,6 +1,6 @@
 name: ClanWars
 main: groundCereal.minecraft.clanWars.ClanWars
-version: v0.0.1
+version: v0.0.2
 author: groundcereal
 depend:
 - SimpleClans
